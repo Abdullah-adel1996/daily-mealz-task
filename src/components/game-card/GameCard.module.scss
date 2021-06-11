@@ -1,0 +1,87 @@
+.game {
+    color: #fff;
+    padding: .7rem;
+    border: 1px solid #ffdc11;
+    border-radius: 5px;
+    background-color: rgb(31, 30, 30);
+    box-shadow: 0 10px 10px #000;;
+    position: relative;
+    overflow: hidden;
+
+    &-figure {
+        margin: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 26rem; 
+            width: 100%;
+            opacity: 0.75;
+            transition: all .5s; 
+        }
+
+    }
+
+    &-title {
+        padding: .7rem;
+        margin-top: 1rem;
+        letter-spacing: 2px;
+        background-color: #ffdc11;
+        color: #000;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+
+    &-score {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #ffdc11;
+        font-weight: 500;
+        color: #000;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    &-details {
+        background-color: transparent;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        padding: 1rem;
+        color: #000;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+
+        p {
+            color: #ffdc11;
+        }
+        
+        h3 {
+            color: #ffdc11;
+        }
+        
+        span {
+            color: #fff;
+        }
+    }
+
+    &:hover img {
+        filter: blur(3px) brightness(80%);
+        cursor: pointer;
+    }
+
+    &:hover &-details {
+        transform: translateY(-50%);
+    }
+}
+
+

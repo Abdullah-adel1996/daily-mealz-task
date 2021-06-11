@@ -1,0 +1,11 @@
+.toolbar {
+    margin-top: 6rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+
+    &-search {
+        width: 30rem;
+        margin-right: 2rem;
+    }
+}

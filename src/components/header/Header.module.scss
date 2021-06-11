@@ -1,0 +1,42 @@
+.navbar {
+    padding: 1rem 3rem !important;
+
+    span {
+        font-weight: 500;
+        font-family: "Vibur", sans-serif;;
+        letter-spacing: 2px;
+        color: #fff;
+        animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 3px #fff,
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 10px #ffdc11,
+        0 0 22px #ffdc11,
+        0 0 26px #ffdc11,
+        0 0 31px #ffdc11,
+        0 0 55px #ffdc11;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 3px #fff,
+            0 0 5px #fff,
+            0 0 8px #fff,
+            0 0 7px #ffdc11,
+            0 0 18px #ffdc11,
+            0 0 25px #ffdc11,
+            0 0 27px #ffdc11,
+            0 0 45px #ffdc11;
+  
+  }
+}
+}
